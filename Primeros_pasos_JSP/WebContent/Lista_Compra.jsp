@@ -49,8 +49,10 @@
 	if (lista != null) {
 		for (String ele : lista)
 		  listaelemento.add(ele);
-		for (String ele : listaelemento)
-			out.print("<li>" + ele + "</li>");
+	}
+	if(listaelemento.size()!=0){
+	for (String ele : listaelemento)
+		out.print("<li>" + ele + "</li>");
 	}
 %>
 </ul>
