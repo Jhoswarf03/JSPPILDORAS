@@ -14,23 +14,28 @@
 </head>
 <body>
  <h1 style="text-align: center;"> Agencia  de  Viaje</h1>
-<% 
-  //si es primera  vez y no tiene registrado  cookis  or defecto sera madrid 
-  String  ciudadfavorita = "Madrid";
-  String  tecnol = "Java";
+<%
+	//si es primera  vez y no tiene registrado  cookis  or defecto sera madrid 
+  String  ciudadfavorita = "ds";
+  String  tecnol = "ds";
   Cookie[] listacookis = request.getCookies();
-  if(listacookis!=null)
-   for(Cookie co: listacookis)
-   {
-	    if("nombreciudad.Ciudad".equals(co.getName()));
-	        ciudadfavorita = co.getValue();
-	      
-	    if("nombretecnologia.tecnologias".equals(co.getName()));
-	    { 
-	    	tecnol = co.getValue();
-	           out.print(tecnol + listacookis.hashCode());
-	    }
-   }
+  			if (listacookis != null) {
+		for (Cookie co : listacookis) {
+			if ("nombreciudad.Ciudad".equals(co.getName()))
+			{
+				ciudadfavorita = co.getValue();
+				break;
+			}
+		}
+		for (Cookie co : listacookis) {
+			if ("nombretecnologia.tecnologias".equals(co.getName()))
+			{
+				tecnol = co.getValue();
+				out.print(tecnol + listacookis.hashCode());
+				break;
+			}	
+		}
+	}
 %>
 <h3> Vuelos  a ciudad  Favorita <%= ciudadfavorita %> </h3>
 <p> Esto esun Texto  de ejemplo  </p>
