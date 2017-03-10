@@ -1,3 +1,4 @@
+<%@ page contentType="text/html:charset=ISO-8859-1" %> e
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,22 +12,19 @@
 <link href="login.css" type="text/css" rel="stylesheet">
 <script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	
+	<script src="js/bootstrap.min.js"></script>	
 </head>
-<body>	
-	<div class="container well loginbox">
-		
+<body>
+	<div class="container well loginbox">	
 		<!--TITULO DE FORMULARIO-->
 		<div class="row">
 			<div class="col-md-12">
 				<h2><p class="text-center">Perfil de usuario</p></h2>
 			</div>
 		</div>
-		<br> <br />
-	
+		<br><br/>
 		<div class="col-md-6 col-md-offset-3">
-		<form action="Comprueba_usuario.jsp" method="get" class="form-horizontal">
+		<form action="Objetoimplicitoresponceprocesar.jsp" method="get" class="form-horizontal">
 			<div class="form-group">
 				<label for="exampleInputEmail1">Email address</label> <input
 					type="text" class="form-control" name="usuario" id="exampleInputEmail1"
@@ -38,7 +36,7 @@
 					placeholder="Password">
 			</div>
 			<div class="checkbox">
-				<label> <input type="radio"  name ="hola"> Olvide la contraseÃ±a
+				<label> <input type="radio"  name ="hola"> Olvide la contraseña
 				</label>
 			</div>
 			<br>
